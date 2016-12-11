@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project( pedestrianDetector )
+set( OpenCV_DIR "/home/ubuntu/opencv-3.1.0/share/OpenCV")
+find_package( OpenCV REQUIRED )
+add_executable( ../pedestrianDetector ../source/pedestrianDetector.cpp)
+target_link_libraries( ../pedestrianDetector ${OpenCV_LIBS} )
